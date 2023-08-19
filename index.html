@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #card {
+            width: 550px;
+            height: 550px;
+            border-radius: 10px;
+            background-color: crimson;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="card"></div>
+
+    <script>
+        let card = document.getElementById('card')
+        console.log(card)
+
+        const ChangeCard = () => {
+            card.style.position = 'relative';
+            card.style.top = '110px';
+            card.style.borderRadius = '50%'
+            card.style.backgroundImage = "url(./PNG_transparency_demonstration_1.png)"
+        }
+
+        setTimeout(() => {
+
+            ChangeCard();
+        }, 3000)
+    </script>
+</body>
+</html>
